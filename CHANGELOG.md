@@ -1,5 +1,11 @@
 # Changelog
 
+## v2 EN - 2026-10-22
+
+- Added the supplied `MiG29A_FF_Operational_Conversion_EN_v2.miz` unchanged as the latest download.
+- Retained v1.1 and its editable sources, artwork and documentation.
+- Verified archive CRC integrity and recorded the v2 SHA-256 checksum; no new in-simulator validation was performed.
+
 ## v1.1 EN - 2026-10-22
 
 - English campaign titles, briefings, exercise tasking and F10 menus.

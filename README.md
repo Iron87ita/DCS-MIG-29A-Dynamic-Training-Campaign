@@ -6,7 +6,8 @@ An English-language **DCS: MiG-29A Fulcrum Full Fidelity** dynamic training camp
 
 ## Downloads
 
-- **[Campaign v1.1 EN](dist/MiG29A_FF_Operational_Conversion_EN_v1.1.miz)** - ready-to-use mission with cover and all eight kneeboard cards embedded.
+- **[Campaign v2 EN](dist/MiG29A_FF_Operational_Conversion_EN_v2.miz)** - latest supplied mission archive, with eight embedded kneeboard pages.
+- [Previous campaign v1.1 EN](dist/MiG29A_FF_Operational_Conversion_EN_v1.1.miz).
 - [English kneeboard PDF](docs/MiG29A_FF_Kneeboard_EN.pdf) - printable reference.
 - [Optional kneeboard PNG pack](dist/MiG29A_FF_Kneeboard_EN_PNG.zip).
 - [Campaign cover](assets/cover.png).
@@ -81,6 +82,8 @@ python tools/validate_mission.py dist/rebuilt.miz
 To regenerate the kneeboard PDF/PNGs, install `tools/requirements.txt` and run `python tools/build_kneeboard.py --help`. The original layout uses Windows Arial, Arial Narrow and Consolas; these fonts are not bundled. Mock-test scripts can run with a compatible Lua 5.1 interpreter; see [test instructions](tests/README.md).
 
 ## Validation status
+
+The supplied v2 archive passed ZIP CRC checks and is published unchanged. Its SHA-256 is recorded in [the checksum manifest](docs/SHA256SUMS.json). The editable `mission/` sources, rebuild tools, detailed campaign description and validation results below refer to v1.1; rebuilding those sources produces v1.1, not v2. The updated v2 mission has not been flight-tested as part of this upload.
 
 Archive CRC, resource references, four FF Client positions, Lua compilation, all eight kneeboard pages and unchanged scenario geometry/weather/triggers were checked. All nine exercises passed simulated API tests with one and four pilots, including the original two-flight multiplayer layout. Rendered cards were visually inspected.
 

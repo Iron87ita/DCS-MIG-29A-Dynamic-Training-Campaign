@@ -1,8 +1,8 @@
 {
   ".gitattributes": "f5f194e25b5dd164639494c73561d015e8d6b0f0588559d654e68d0a0d9e4101",
   ".gitignore": "21a791ff344c82daf7151abbe2d5f41c15ecfef9afb811dffa81c74fd31e86e7",
-  "CHANGELOG.md": "02caa68e5babd38226144089e2f07da99cf2412140dbb7415b76bb9c401746f9",
-  "README.md": "249887f77dd5ed647cabd1cbaefb24c69c8e906e1beba3b2fa8e629a5fd87f39",
+  "CHANGELOG.md": "9016cd776bca3e42231c2ab5f28be2199d6ad94138e3d958fadcd3e4557eb57e",
+  "README.md": "4480735035de6f5059570b2cce2df7279c5f34d15c97894215280fe44144994a",
   "assets/cover.png": "be35175d93ae962e94962687b5b90ce81e458f13032edb6a5e77a9092bcce774",
   "assets/kneeboard-preview.png": "38c45a05c7a64ae5cc0a03f1a0af7567677f4a16be83a7f1482578a8d85c6ae8",
   "dist/MiG29A_FF_Kneeboard_EN_PNG.zip": "5d440bf4ac6219dc4c058d50577d5442265fe3ab582764d243a937f0f6a3222e",
@@ -38,5 +38,6 @@
   "mission/l10n/DEFAULT/Dynamic_Training.lua": "ff307dc55a2e720ba7be1872dd6aaa723487ca971703a6c8442cf3941d2a6cbf",
   "mission/l10n/DEFAULT/mapResource": "de4f01fe1662af6842d853be2f6bea302fa95b8d1f3b22986317868bb153cad0",
   "mission/Scripts/World/birds.lua": "542f0c1908684d402b22eb4c110897b7398316d8cf0d606b3beff6396b327c4c",
-  "mission/Scripts/World/GPS_GNSS.lua": "2fb199b21931f25c5c50709d2318b3b279e2ed62d618ae2826687c1389796933"
+  "mission/Scripts/World/GPS_GNSS.lua": "2fb199b21931f25c5c50709d2318b3b279e2ed62d618ae2826687c1389796933",
+  "dist/MiG29A_FF_Operational_Conversion_EN_v2.miz": "613bfaced1c2c4b470eea9223b4063272ebac9854b1c5e2fec62b8729b132ad6"
 }
