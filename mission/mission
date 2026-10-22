@@ -1,0 +1,5299 @@
+mission = 
+{
+	["groundControl"] = 
+	{
+		["passwords"] = 
+		{
+			["artillery_commander"] = {},
+			["instructor"] = {},
+			["observer"] = {},
+			["forward_observer"] = {},
+		}, -- end of ["passwords"]
+		["roles"] = 
+		{
+			["artillery_commander"] = 
+			{
+				["neutrals"] = 0,
+				["blue"] = 0,
+				["red"] = 0,
+			}, -- end of ["artillery_commander"]
+			["instructor"] = 
+			{
+				["neutrals"] = 0,
+				["blue"] = 0,
+				["red"] = 0,
+			}, -- end of ["instructor"]
+			["observer"] = 
+			{
+				["neutrals"] = 0,
+				["blue"] = 0,
+				["red"] = 0,
+			}, -- end of ["observer"]
+			["forward_observer"] = 
+			{
+				["neutrals"] = 0,
+				["blue"] = 0,
+				["red"] = 0,
+			}, -- end of ["forward_observer"]
+		}, -- end of ["roles"]
+		["isPilotControlVehicles"] = false,
+	}, -- end of ["groundControl"]
+	["requiredModules"] = {},
+	["date"] = 
+	{
+		["Day"] = 28,
+		["Year"] = 1988,
+		["Month"] = 9,
+	}, -- end of ["date"]
+	["trig"] = 
+	{
+		["actions"] = 
+		{
+			[1] = "a_do_script_file(getValueResourceByKey(\"ResKey_Dynamic_Training\"));a_remove_scene_objects(165, 1); mission.trig.func[1]=nil;",
+		}, -- end of ["actions"]
+		["events"] = {},
+		["custom"] = {},
+		["func"] = 
+		{
+			[1] = "if mission.trig.conditions[1]() then mission.trig.actions[1]() end",
+		}, -- end of ["func"]
+		["flag"] = 
+		{
+			[1] = true,
+		}, -- end of ["flag"]
+		["conditions"] = 
+		{
+			[1] = "return(c_time_after(1) )",
+		}, -- end of ["conditions"]
+		["customStartup"] = {},
+		["funcStartup"] = {},
+	}, -- end of ["trig"]
+	["maxDictId"] = 12,
+	["result"] = 
+	{
+		["offline"] = 
+		{
+			["conditions"] = {},
+			["actions"] = {},
+			["func"] = {},
+		}, -- end of ["offline"]
+		["total"] = 0,
+		["blue"] = 
+		{
+			["conditions"] = {},
+			["actions"] = {},
+			["func"] = {},
+		}, -- end of ["blue"]
+		["red"] = 
+		{
+			["conditions"] = {},
+			["actions"] = {},
+			["func"] = {},
+		}, -- end of ["red"]
+	}, -- end of ["result"]
+	["pictureFileNameN"] = 
+	{[1] = "ResKey_MiG29A_CampaignCover_EN"}, -- end of ["pictureFileNameN"]
+	["drawings"] = 
+	{
+		["options"] = 
+		{
+			["hiddenOnF10Map"] = 
+			{
+				["Observer"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["Observer"]
+				["Instructor"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["Instructor"]
+				["ForwardObserver"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["ForwardObserver"]
+				["ArtilleryCommander"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["ArtilleryCommander"]
+				["Spectrator"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["Spectrator"]
+				["Pilot"] = 
+				{
+					["Neutral"] = false,
+					["Blue"] = false,
+					["Red"] = false,
+				}, -- end of ["Pilot"]
+			}, -- end of ["hiddenOnF10Map"]
+		}, -- end of ["options"]
+		["layers"] = 
+		{
+			[2] = 
+			{
+				["visible"] = true,
+				["name"] = "Blue",
+				["objects"] = {},
+			}, -- end of [2]
+			[3] = 
+			{
+				["visible"] = true,
+				["name"] = "Neutral",
+				["objects"] = {},
+			}, -- end of [3]
+			[1] = 
+			{
+				["visible"] = true,
+				["name"] = "Red",
+				["objects"] = {},
+			}, -- end of [1]
+			[4] = 
+			{
+				["visible"] = true,
+				["name"] = "Common",
+				["objects"] = {},
+			}, -- end of [4]
+			[5] = 
+			{
+				["visible"] = true,
+				["name"] = "Author",
+				["objects"] = {},
+			}, -- end of [5]
+		}, -- end of ["layers"]
+	}, -- end of ["drawings"]
+	["descriptionNeutralsTask"] = "DictKey_descriptionNeutralsTask_4",
+	["pictureFileNameServer"] = {},
+	["weather"] = 
+	{
+		["wind"] = 
+		{
+			["at8000"] = 
+			{
+				["speed"] = 0,
+				["dir"] = 0,
+			}, -- end of ["at8000"]
+			["atGround"] = 
+			{
+				["speed"] = 0,
+				["dir"] = 0,
+			}, -- end of ["atGround"]
+			["at2000"] = 
+			{
+				["speed"] = 0,
+				["dir"] = 0,
+			}, -- end of ["at2000"]
+		}, -- end of ["wind"]
+		["enable_fog"] = false,
+		["season"] = 
+		{
+			["temperature"] = 18,
+		}, -- end of ["season"]
+		["qnh"] = 760,
+		["cyclones"] = 
+		{
+			[1] = 
+			{
+				["rotation"] = 1.2460400285516,
+				["centerZ"] = 276398.11634696,
+				["pressure_spread"] = 884263.81666985,
+				["ellipticity"] = 1.1805552612303,
+				["pressure_excess"] = -1039,
+				["centerX"] = -121893.10664058,
+			}, -- end of [1]
+		}, -- end of ["cyclones"]
+		["dust_density"] = 0,
+		["enable_dust"] = false,
+		["clouds"] = 
+		{
+			["thickness"] = 200,
+			["density"] = 0,
+			["preset"] = "Preset8",
+			["base"] = 5460,
+			["iprecptns"] = 0,
+		}, -- end of ["clouds"]
+		["atmosphere_type"] = 0,
+		["groundTurbulence"] = 0,
+		["halo"] = 
+		{
+			["preset"] = "auto",
+		}, -- end of ["halo"]
+		["type_weather"] = 0,
+		["modifiedTime"] = false,
+		["fog2"] = 
+		{
+			["mode"] = 2,
+		}, -- end of ["fog2"]
+		["name"] = "Winter, clean sky",
+		["fog"] = 
+		{
+			["visibility"] = 0,
+			["thickness"] = 0,
+		}, -- end of ["fog"]
+		["visibility"] = 
+		{
+			["distance"] = 80000,
+		}, -- end of ["visibility"]
+	}, -- end of ["weather"]
+	["theatre"] = "Caucasus",
+	["triggers"] = 
+	{
+		["zones"] = 
+		{
+			[1] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 165,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 710176.22320332,
+				["x"] = -282728.90431283,
+				["name"] = "SPAWN ZONE GROUND",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [1]
+			[2] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 330,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 708445.53577447,
+				["x"] = -282704.96684107,
+				["name"] = "SPAWN ZONE GROUND-1",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [2]
+			[3] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 331,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 695858.34345088,
+				["x"] = -289405.31793787,
+				["name"] = "SPAWN ZONE GROUND-2",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [3]
+			[4] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 332,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 687565.83552935,
+				["x"] = -272895.49145146,
+				["name"] = "SPAWN ZONE GROUND-3",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [4]
+			[5] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 333,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 685820.67783997,
+				["x"] = -274254.55230691,
+				["name"] = "SPAWN ZONE GROUND-4",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [5]
+			[6] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 334,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 685328.01348363,
+				["x"] = -268468.12389105,
+				["name"] = "SPAWN ZONE GROUND-5",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [6]
+			[7] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 335,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 708309.53391459,
+				["x"] = -277154.46942767,
+				["name"] = "SPAWN ZONE GROUND-6",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [7]
+			[8] = 
+			{
+				["radius"] = 457.2,
+				["zoneId"] = 336,
+				["color"] = 
+				{
+					[1] = 0,
+					[2] = 0,
+					[3] = 0,
+					[4] = 0.14901960784314,
+				}, -- end of ["color"]
+				["properties"] = {},
+				["hidden"] = false,
+				["y"] = 713009.75266077,
+				["x"] = -279832.68192908,
+				["name"] = "SPAWN ZONE GROUND-7",
+				["heading"] = 0,
+				["type"] = 0,
+			}, -- end of [8]
+		}, -- end of ["zones"]
+	}, -- end of ["triggers"]
+	["map"] = 
+	{
+		["centerY"] = 650880.09508757,
+		["zoom"] = 125953.38168499,
+		["centerX"] = -320834.75898067,
+	}, -- end of ["map"]
+	["coalitions"] = 
+	{
+		["blue"] = 
+		{
+			[1] = 21,
+			[2] = 11,
+			[3] = 8,
+			[4] = 80,
+			[5] = 28,
+			[6] = 26,
+			[7] = 13,
+			[8] = 5,
+			[9] = 16,
+			[10] = 6,
+			[11] = 15,
+			[12] = 20,
+			[13] = 12,
+			[14] = 40,
+			[15] = 45,
+			[16] = 9,
+			[17] = 46,
+			[18] = 10,
+			[19] = 3,
+			[20] = 4,
+			[21] = 1,
+			[22] = 2,
+		}, -- end of ["blue"]
+		["neutrals"] = 
+		{
+			[1] = 91,
+			[2] = 70,
+			[3] = 83,
+			[4] = 23,
+			[5] = 65,
+			[6] = 86,
+			[7] = 64,
+			[8] = 25,
+			[9] = 63,
+			[10] = 76,
+			[11] = 84,
+			[12] = 90,
+			[13] = 29,
+			[14] = 62,
+			[15] = 30,
+			[16] = 78,
+			[17] = 87,
+			[18] = 31,
+			[19] = 61,
+			[20] = 32,
+			[21] = 33,
+			[22] = 60,
+			[23] = 17,
+			[24] = 35,
+			[25] = 69,
+			[26] = 36,
+			[27] = 59,
+			[28] = 71,
+			[29] = 79,
+			[30] = 58,
+			[31] = 57,
+			[32] = 56,
+			[33] = 55,
+			[34] = 92,
+			[35] = 88,
+			[36] = 73,
+			[37] = 39,
+			[38] = 89,
+			[39] = 54,
+			[40] = 77,
+			[41] = 72,
+			[42] = 41,
+			[43] = 42,
+			[44] = 44,
+			[45] = 85,
+			[46] = 75,
+			[47] = 53,
+			[48] = 22,
+			[49] = 52,
+			[50] = 66,
+			[51] = 51,
+			[52] = 74,
+			[53] = 82,
+			[54] = 7,
+			[55] = 68,
+			[56] = 50,
+			[57] = 49,
+			[58] = 48,
+			[59] = 67,
+		}, -- end of ["neutrals"]
+		["red"] = 
+		{
+			[1] = 18,
+			[2] = 24,
+			[3] = 27,
+			[4] = 81,
+			[5] = 34,
+			[6] = 37,
+			[7] = 38,
+			[8] = 0,
+			[9] = 43,
+			[10] = 19,
+			[11] = 47,
+		}, -- end of ["red"]
+	}, -- end of ["coalitions"]
+	["descriptionText"] = "DictKey_descriptionText_1",
+	["pictureFileNameR"] = 
+	{[1] = "ResKey_MiG29A_CampaignCover_EN"}, -- end of ["pictureFileNameR"]
+	["descriptionBlueTask"] = "DictKey_descriptionBlueTask_3",
+	["goals"] = {},
+	["descriptionRedTask"] = "DictKey_descriptionRedTask_2",
+	["pictureFileNameB"] = 
+	{[1] = "ResKey_MiG29A_CampaignCover_EN"}, -- end of ["pictureFileNameB"]
+	["coalition"] = 
+	{
+		["blue"] = 
+		{
+			["bullseye"] = 
+			{
+				["y"] = 617414,
+				["x"] = -291014,
+			}, -- end of ["bullseye"]
+			["nav_points"] = {},
+			["name"] = "blue",
+			["country"] = 
+			{
+				[1] = 
+				{
+					["name"] = "CJTF Blue",
+					["id"] = 80,
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 18,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 635501.83754536,
+											["x"] = -318546.05265335,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["number"] = 1,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "ActivateGCI",
+																	["params"] = 
+																	{
+																		["y"] = 0,
+																		["radius"] = 399600,
+																		["channel"] = 3,
+																		["unitId"] = 1066,
+																		["x"] = 0,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [1]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 166,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "GCI_station_MiG29",
+										["unitId"] = 1066,
+										["y"] = 635501.83754536,
+										["x"] = -318546.05265335,
+										["name"] = "GCI TAF KOBULETI",
+										["heading"] = 0.21816615649929,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635501.83754536,
+								["x"] = -318546.05265335,
+								["name"] = "GCI TAF KOBULETI",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+					["plane"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["dynSpawnTemplate"] = false,
+								["modulation"] = 0,
+								["tasks"] = {},
+								["radioSet"] = false,
+								["task"] = "CAP",
+								["uncontrolled"] = false,
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 18,
+											["action"] = "From Ground Area Hot",
+											["alt_type"] = "BARO",
+											["speed"] = 138.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["number"] = 1,
+															["key"] = "CAP",
+															["id"] = "EngageTargets",
+															["enabled"] = true,
+															["auto"] = true,
+															["params"] = 
+															{
+																["targetTypes"] = 
+																{
+																	[1] = "Air",
+																}, -- end of ["targetTypes"]
+																["priority"] = 0,
+															}, -- end of ["params"]
+														}, -- end of [1]
+														[2] = 
+														{
+															["number"] = 2,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["name"] = 17,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [2]
+														[3] = 
+														{
+															["number"] = 3,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = 4,
+																		["name"] = 18,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [3]
+														[4] = 
+														{
+															["number"] = 4,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["name"] = 19,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [4]
+														[5] = 
+														{
+															["number"] = 5,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["targetTypes"] = {},
+																		["name"] = 21,
+																		["value"] = "none;",
+																		["noTargetTypes"] = 
+																		{
+																			[1] = "Fighters",
+																			[2] = "Multirole fighters",
+																			[3] = "Bombers",
+																			[4] = "Helicopters",
+																			[5] = "UAVs",
+																			[6] = "Infantry",
+																			[7] = "Fortifications",
+																			[8] = "Tanks",
+																			[9] = "IFV",
+																			[10] = "APC",
+																			[11] = "Artillery",
+																			[12] = "Unarmed vehicles",
+																			[13] = "AAA",
+																			[14] = "SR SAM",
+																			[15] = "MR SAM",
+																			[16] = "LR SAM",
+																			[17] = "Aircraft Carriers",
+																			[18] = "Cruisers",
+																			[19] = "Destroyers",
+																			[20] = "Frigates",
+																			[21] = "Corvettes",
+																			[22] = "Light armed ships",
+																			[23] = "Unarmed ships",
+																			[24] = "Submarines",
+																			[25] = "Cruise missiles",
+																			[26] = "Antiship Missiles",
+																			[27] = "AA Missiles",
+																			[28] = "AG Missiles",
+																			[29] = "SA Missiles",
+																		}, -- end of ["noTargetTypes"]
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [5]
+														[6] = 
+														{
+															["number"] = 6,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["name"] = 35,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [6]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "TakeOffGroundHot",
+											["ETA"] = 0,
+											["ETA_locked"] = true,
+											["y"] = 635013.89859548,
+											["x"] = -317882.90726199,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 2,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{["alt"] = 18, ["alt_type"] = "BARO", ["skill"] = "Client", ["speed"] = 138.88888888889, ["AddPropAircraft"] = {["Realistic INS"] = 1, ["IMU alignment type"] = 1, ["HelmetMountedDevice"] = 1, ["SPOMode"] = 1}, ["type"] = "MiG-29 Fulcrum", ["Radio"] = {[1] = {["channels"] = {[1] = 133.0, [2] = 133.0, [3] = 131.0, [4] = 134.0, [5] = 132.0, [6] = 124.0, [7] = 124.0, [8] = 124.0, [9] = 124.0, [10] = 124.0, [11] = 124.0, [12] = 124.0, [13] = 124.0, [14] = 124.0, [15] = 124.0, [16] = 124.0, [17] = 124.0, [18] = 124.0, [19] = 124.0, [20] = 124.0}, ["modulations"] = {[1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0, [9] = 0, [10] = 0, [11] = 0, [12] = 0, [13] = 0, [14] = 0, [15] = 0, [16] = 0, [17] = 0, [18] = 0, [19] = 0, [20] = 0}, ["channelsNames"] = {[1] = "KOBULETI (CH0)", [2] = "KOBULETI", [3] = "BATUMI", [4] = "KUTAISI", [5] = "SENAKI", [6] = "FLIGHT"}}}, ["unitId"] = 2, ["psi"] = -2.1118483949131, ["onboard_num"] = "010", ["y"] = 635013.89859548, ["x"] = -317882.90726199, ["name"] = "MIG29A_FF_01", ["payload"] = {["pylons"] = {[2] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}, [3] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [4] = {["CLSID"] = "{PTB_1500_MIG29A}"}, [5] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [6] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}}, ["fuel"] = 3376, ["flare"] = 30, ["chaff"] = 30, ["gun"] = 100}, ["heading"] = 2.1118483949131, ["callsign"] = {[1] = 2, [2] = 1, ["name"] = "Enfield21", [3] = 1}}, -- end of [1]
+									[2] = 
+									{["alt"] = 18, ["alt_type"] = "BARO", ["skill"] = "Client", ["speed"] = 138.88888888889, ["AddPropAircraft"] = {["Realistic INS"] = 1, ["IMU alignment type"] = 1, ["HelmetMountedDevice"] = 1, ["SPOMode"] = 1}, ["type"] = "MiG-29 Fulcrum", ["Radio"] = {[1] = {["channels"] = {[1] = 133.0, [2] = 133.0, [3] = 131.0, [4] = 134.0, [5] = 132.0, [6] = 124.0, [7] = 124.0, [8] = 124.0, [9] = 124.0, [10] = 124.0, [11] = 124.0, [12] = 124.0, [13] = 124.0, [14] = 124.0, [15] = 124.0, [16] = 124.0, [17] = 124.0, [18] = 124.0, [19] = 124.0, [20] = 124.0}, ["modulations"] = {[1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0, [9] = 0, [10] = 0, [11] = 0, [12] = 0, [13] = 0, [14] = 0, [15] = 0, [16] = 0, [17] = 0, [18] = 0, [19] = 0, [20] = 0}, ["channelsNames"] = {[1] = "KOBULETI (CH0)", [2] = "KOBULETI", [3] = "BATUMI", [4] = "KUTAISI", [5] = "SENAKI", [6] = "FLIGHT"}}}, ["unitId"] = 1115, ["psi"] = -5.9166661642608, ["onboard_num"] = "012", ["y"] = 635292.63027621, ["x"] = -317775.98612457, ["name"] = "MIG29A_FF_02", ["payload"] = {["pylons"] = {[2] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}, [3] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [4] = {["CLSID"] = "{PTB_1500_MIG29A}"}, [5] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [6] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}}, ["fuel"] = 3376, ["flare"] = 30, ["chaff"] = 30, ["gun"] = 100}, ["heading"] = 5.9166661642608, ["callsign"] = {[1] = 2, [2] = 1, ["name"] = "Springfield12", [3] = 2}}, -- end of [2]
+								}, -- end of ["units"]
+								["y"] = 635013.89859548,
+								["x"] = -317882.90726199,
+								["name"] = "IRON",
+								["communication"] = true,
+								["start_time"] = 0,
+								["uncontrollable"] = false,
+								["frequency"] = 133.0,
+							}, -- end of [1]
+							[2] = 
+							{
+								["dynSpawnTemplate"] = false,
+								["modulation"] = 0,
+								["tasks"] = {},
+								["radioSet"] = false,
+								["task"] = "CAP",
+								["uncontrolled"] = false,
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 18,
+											["action"] = "From Ground Area Hot",
+											["alt_type"] = "BARO",
+											["speed"] = 138.88888888889,
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["number"] = 1,
+															["key"] = "CAP",
+															["id"] = "EngageTargets",
+															["enabled"] = true,
+															["auto"] = true,
+															["params"] = 
+															{
+																["targetTypes"] = 
+																{
+																	[1] = "Air",
+																}, -- end of ["targetTypes"]
+																["priority"] = 0,
+															}, -- end of ["params"]
+														}, -- end of [1]
+														[2] = 
+														{
+															["number"] = 2,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["name"] = 17,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [2]
+														[3] = 
+														{
+															["number"] = 3,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = 4,
+																		["name"] = 18,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [3]
+														[4] = 
+														{
+															["number"] = 4,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["name"] = 19,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [4]
+														[5] = 
+														{
+															["number"] = 5,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["targetTypes"] = {},
+																		["name"] = 21,
+																		["value"] = "none;",
+																		["noTargetTypes"] = 
+																		{
+																			[1] = "Fighters",
+																			[2] = "Multirole fighters",
+																			[3] = "Bombers",
+																			[4] = "Helicopters",
+																			[5] = "UAVs",
+																			[6] = "Infantry",
+																			[7] = "Fortifications",
+																			[8] = "Tanks",
+																			[9] = "IFV",
+																			[10] = "APC",
+																			[11] = "Artillery",
+																			[12] = "Unarmed vehicles",
+																			[13] = "AAA",
+																			[14] = "SR SAM",
+																			[15] = "MR SAM",
+																			[16] = "LR SAM",
+																			[17] = "Aircraft Carriers",
+																			[18] = "Cruisers",
+																			[19] = "Destroyers",
+																			[20] = "Frigates",
+																			[21] = "Corvettes",
+																			[22] = "Light armed ships",
+																			[23] = "Unarmed ships",
+																			[24] = "Submarines",
+																			[25] = "Cruise missiles",
+																			[26] = "Antiship Missiles",
+																			[27] = "AA Missiles",
+																			[28] = "AG Missiles",
+																			[29] = "SA Missiles",
+																		}, -- end of ["noTargetTypes"]
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [5]
+														[6] = 
+														{
+															["number"] = 6,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["enabled"] = true,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "Option",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["name"] = 35,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [6]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["type"] = "TakeOffGroundHot",
+											["ETA"] = 0,
+											["ETA_locked"] = true,
+											["y"] = 635096.76310334,
+											["x"] = -317748.91001886,
+											["speed_locked"] = true,
+											["formation_template"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 189,
+								["hidden"] = false,
+								["units"] = 
+								{
+									[1] = 
+									{["alt"] = 18, ["alt_type"] = "BARO", ["skill"] = "Client", ["speed"] = 138.88888888889, ["AddPropAircraft"] = {["Realistic INS"] = 1, ["IMU alignment type"] = 1, ["HelmetMountedDevice"] = 1, ["SPOMode"] = 1}, ["type"] = "MiG-29 Fulcrum", ["Radio"] = {[1] = {["channels"] = {[1] = 133.0, [2] = 133.0, [3] = 131.0, [4] = 134.0, [5] = 132.0, [6] = 124.0, [7] = 124.0, [8] = 124.0, [9] = 124.0, [10] = 124.0, [11] = 124.0, [12] = 124.0, [13] = 124.0, [14] = 124.0, [15] = 124.0, [16] = 124.0, [17] = 124.0, [18] = 124.0, [19] = 124.0, [20] = 124.0}, ["modulations"] = {[1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0, [9] = 0, [10] = 0, [11] = 0, [12] = 0, [13] = 0, [14] = 0, [15] = 0, [16] = 0, [17] = 0, [18] = 0, [19] = 0, [20] = 0}, ["channelsNames"] = {[1] = "KOBULETI (CH0)", [2] = "KOBULETI", [3] = "BATUMI", [4] = "KUTAISI", [5] = "SENAKI", [6] = "FLIGHT"}}}, ["unitId"] = 1089, ["psi"] = -2.1118483949131, ["onboard_num"] = "011", ["y"] = 635096.76310334, ["x"] = -317748.91001886, ["name"] = "MIG29A_FF_03", ["payload"] = {["pylons"] = {[2] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}, [3] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [4] = {["CLSID"] = "{PTB_1500_MIG29A}"}, [5] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [6] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}}, ["fuel"] = 3376, ["flare"] = 30, ["chaff"] = 30, ["gun"] = 100}, ["heading"] = 2.1118483949131, ["callsign"] = {[1] = 1, [2] = 1, ["name"] = "Enfield11", [3] = 1}}, -- end of [1]
+									[2] = 
+									{["alt"] = 18, ["alt_type"] = "BARO", ["skill"] = "Client", ["speed"] = 138.88888888889, ["AddPropAircraft"] = {["Realistic INS"] = 1, ["IMU alignment type"] = 1, ["HelmetMountedDevice"] = 1, ["SPOMode"] = 1}, ["type"] = "MiG-29 Fulcrum", ["Radio"] = {[1] = {["channels"] = {[1] = 133.0, [2] = 133.0, [3] = 131.0, [4] = 134.0, [5] = 132.0, [6] = 124.0, [7] = 124.0, [8] = 124.0, [9] = 124.0, [10] = 124.0, [11] = 124.0, [12] = 124.0, [13] = 124.0, [14] = 124.0, [15] = 124.0, [16] = 124.0, [17] = 124.0, [18] = 124.0, [19] = 124.0, [20] = 124.0}, ["modulations"] = {[1] = 0, [2] = 0, [3] = 0, [4] = 0, [5] = 0, [6] = 0, [7] = 0, [8] = 0, [9] = 0, [10] = 0, [11] = 0, [12] = 0, [13] = 0, [14] = 0, [15] = 0, [16] = 0, [17] = 0, [18] = 0, [19] = 0, [20] = 0}, ["channelsNames"] = {[1] = "KOBULETI (CH0)", [2] = "KOBULETI", [3] = "BATUMI", [4] = "KUTAISI", [5] = "SENAKI", [6] = "FLIGHT"}}}, ["unitId"] = 1117, ["psi"] = -2.7925268031909, ["onboard_num"] = "013", ["y"] = 635288.96454291, ["x"] = -317653.03036177, ["name"] = "MIG29A_FF_04", ["payload"] = {["pylons"] = {[2] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}, [3] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [4] = {["CLSID"] = "{PTB_1500_MIG29A}"}, [5] = {["CLSID"] = "{MISSILE_R-27R_APU-470}"}, [6] = {["CLSID"] = "{MISSILE_R-73_APU-73}"}}, ["fuel"] = 3376, ["flare"] = 30, ["chaff"] = 30, ["gun"] = 100}, ["heading"] = 2.7925268031909, ["callsign"] = {[1] = 1, [2] = 1, ["name"] = "Enfield12", [3] = 2}}, -- end of [2]
+								}, -- end of ["units"]
+								["y"] = 635096.76310334,
+								["x"] = -317748.91001886,
+								["name"] = "TRIGGER",
+								["communication"] = true,
+								["start_time"] = 0,
+								["uncontrollable"] = false,
+								["frequency"] = 133.0,
+							}, -- end of [2]
+						}, -- end of ["group"]
+					}, -- end of ["plane"]
+					["static"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["heading"] = 6.0737457969403,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635191.11605445,
+											["speed"] = 0,
+											["x"] = -318328.02234863,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 119,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "3EscChampagne",
+										["category"] = "Planes",
+										["type"] = "M-2000C",
+										["unitId"] = 1019,
+										["rate"] = 50,
+										["y"] = 635191.11605445,
+										["x"] = -318328.02234863,
+										["name"] = "Static M-2000C-1-1",
+										["heading"] = 6.0737457969403,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635191.11605445,
+								["x"] = -318328.02234863,
+								["name"] = "Static M-2000C-1",
+								["dead"] = false,
+							}, -- end of [1]
+							[2] = 
+							{
+								["heading"] = 6.0737457969403,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635214.92977944,
+											["speed"] = 0,
+											["x"] = -318321.97195596,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 120,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "3EscChampagne",
+										["category"] = "Planes",
+										["type"] = "M-2000C",
+										["unitId"] = 1020,
+										["rate"] = 50,
+										["y"] = 635214.92977944,
+										["x"] = -318321.97195596,
+										["name"] = "Static M-2000C-2-1",
+										["heading"] = 6.0737457969403,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635214.92977944,
+								["x"] = -318321.97195596,
+								["name"] = "Static M-2000C-2",
+								["dead"] = false,
+							}, -- end of [2]
+							[3] = 
+							{
+								["heading"] = 6.0737457969403,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635260.90827137,
+											["speed"] = 0,
+											["x"] = -318310.43772965,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 121,
+								["units"] = 
+								{
+									[1] = 
+									{["tasks"] = {}, ["category"] = "Planes", ["type"] = "MiG-29 Fulcrum", ["unitId"] = 1021, ["rate"] = 40, ["y"] = 635260.90827137, ["x"] = -318310.43772965, ["name"] = "Static MiG-29A Fulcrum-1", ["heading"] = 6.0737457969403}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635260.90827137,
+								["x"] = -318310.43772965,
+								["name"] = "Static Mirage F1EE-1",
+								["dead"] = false,
+							}, -- end of [3]
+							[4] = 
+							{
+								["heading"] = 6.0737457969403,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635284.41672174,
+											["speed"] = 0,
+											["x"] = -318304.19329752,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 122,
+								["units"] = 
+								{
+									[1] = 
+									{["tasks"] = {}, ["category"] = "Planes", ["type"] = "MiG-29 Fulcrum", ["unitId"] = 1022, ["rate"] = 40, ["y"] = 635284.41672174, ["x"] = -318304.19329752, ["name"] = "Static MiG-29A Fulcrum-2", ["heading"] = 6.0737457969403}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635284.41672174,
+								["x"] = -318304.19329752,
+								["name"] = "Static Mirage F1EE-2",
+								["dead"] = false,
+							}, -- end of [4]
+							[5] = 
+							{
+								["heading"] = 6.0737457969403,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635331.10250778,
+											["speed"] = 0,
+											["x"] = -318292.96444471,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 123,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "ala 14 camu lagarto 1975-1990",
+										["category"] = "Planes",
+										["type"] = "Mirage-F1CE",
+										["unitId"] = 1023,
+										["rate"] = 40,
+										["y"] = 635331.10250778,
+										["x"] = -318292.96444471,
+										["name"] = "Static Mirage F1CE-1",
+										["heading"] = 6.0737457969403,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635331.10250778,
+								["x"] = -318292.96444471,
+								["name"] = "Static Mirage F1CE-1",
+								["dead"] = false,
+							}, -- end of [5]
+							[6] = 
+							{
+								["heading"] = 6.0737457969403,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635355.54780389,
+											["speed"] = 0,
+											["x"] = -318286.57189875,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 124,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "ala 14 camu lagarto 1975-1990",
+										["category"] = "Planes",
+										["type"] = "Mirage-F1CE",
+										["unitId"] = 1024,
+										["rate"] = 40,
+										["y"] = 635355.54780389,
+										["x"] = -318286.57189875,
+										["name"] = "Static Mirage F1CE-2",
+										["heading"] = 6.0737457969403,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635355.54780389,
+								["x"] = -318286.57189875,
+								["name"] = "Static Mirage F1CE-2",
+								["dead"] = false,
+							}, -- end of [6]
+							[7] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635312.2133756,
+											["speed"] = 0,
+											["x"] = -318314.21033913,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 125,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Tractor",
+										["unitId"] = 1025,
+										["rate"] = 10,
+										["y"] = 635312.2133756,
+										["x"] = -318314.21033913,
+										["name"] = "Static Tractor SLT-50 [CH]-5",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635312.2133756,
+								["x"] = -318314.21033913,
+								["name"] = "Static Tractor SLT-50 [CH]-5",
+								["dead"] = false,
+							}, -- end of [7]
+							[8] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635319.56707831,
+											["speed"] = 0,
+											["x"] = -318312.24288525,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 126,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1026,
+										["rate"] = 10,
+										["y"] = 635319.56707831,
+										["x"] = -318312.24288525,
+										["name"] = "Static Trailer SLT-50 [CH]-12",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635319.56707831,
+								["x"] = -318312.24288525,
+								["name"] = "Static Trailer SLT-50 [CH]-12",
+								["dead"] = false,
+							}, -- end of [8]
+							[9] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635326.8765926,
+											["speed"] = 0,
+											["x"] = -318307.0563385,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 127,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1027,
+										["rate"] = 1,
+										["y"] = 635326.8765926,
+										["x"] = -318307.0563385,
+										["name"] = "Static M92 M32-10C 02-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635326.8765926,
+								["x"] = -318307.0563385,
+								["name"] = "Static M92 M32-10C 02-1",
+								["dead"] = false,
+							}, -- end of [9]
+							[10] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635324.97461547,
+											["speed"] = 0,
+											["x"] = -318301.05997777,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 128,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1028,
+										["rate"] = 1,
+										["y"] = 635324.97461547,
+										["x"] = -318301.05997777,
+										["name"] = "Static M92 AM32a-60-02-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635324.97461547,
+								["x"] = -318301.05997777,
+								["name"] = "Static M92 AM32a-60-02-1",
+								["dead"] = false,
+							}, -- end of [10]
+							[11] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635347.06971781,
+											["speed"] = 0,
+											["x"] = -318292.93794416,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 129,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1029,
+										["rate"] = 1,
+										["y"] = 635347.06971781,
+										["x"] = -318292.93794416,
+										["name"] = "Static M92 AM32a-60-02-2-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635347.06971781,
+								["x"] = -318292.93794416,
+								["name"] = "Static M92 AM32a-60-02-2",
+								["dead"] = false,
+							}, -- end of [11]
+							[12] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635273.12141444,
+											["speed"] = 0,
+											["x"] = -318309.21085786,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 130,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1030,
+										["rate"] = 1,
+										["y"] = 635273.12141444,
+										["x"] = -318309.21085786,
+										["name"] = "Static M92 AM32a-60-02-3-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635273.12141444,
+								["x"] = -318309.21085786,
+								["name"] = "Static M92 AM32a-60-02-3",
+								["dead"] = false,
+							}, -- end of [12]
+							[13] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635202.13911583,
+											["speed"] = 0,
+											["x"] = -318326.51436873,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 131,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1031,
+										["rate"] = 1,
+										["y"] = 635202.13911583,
+										["x"] = -318326.51436873,
+										["name"] = "Static M92 AM32a-60-02-4-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635202.13911583,
+								["x"] = -318326.51436873,
+								["name"] = "Static M92 AM32a-60-02-4",
+								["dead"] = false,
+							}, -- end of [13]
+							[14] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635227.07168837,
+											["speed"] = 0,
+											["x"] = -318322.32140657,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 132,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1032,
+										["rate"] = 1,
+										["y"] = 635227.07168837,
+										["x"] = -318322.32140657,
+										["name"] = "Static M92 M32-10C 02-2-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635227.07168837,
+								["x"] = -318322.32140657,
+								["name"] = "Static M92 M32-10C 02-2",
+								["dead"] = false,
+							}, -- end of [14]
+							[15] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635241.77039603,
+											["speed"] = 0,
+											["x"] = -318332.17698864,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 133,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_HX81_Tractor",
+										["unitId"] = 1033,
+										["rate"] = 5,
+										["y"] = 635241.77039603,
+										["x"] = -318332.17698864,
+										["name"] = "Static Tractor HX81 [CH]-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635241.77039603,
+								["x"] = -318332.17698864,
+								["name"] = "Static Tractor HX81 [CH]-1",
+								["dead"] = false,
+							}, -- end of [15]
+							[16] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635249.12409874,
+											["speed"] = 0,
+											["x"] = -318330.20953476,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 134,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1034,
+										["rate"] = 10,
+										["y"] = 635249.12409874,
+										["x"] = -318330.20953476,
+										["name"] = "Static Trailer SLT-50 [CH]-11",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635249.12409874,
+								["x"] = -318330.20953476,
+								["name"] = "Static Trailer SLT-50 [CH]-11",
+								["dead"] = false,
+							}, -- end of [16]
+							[17] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635384.10059778,
+											["speed"] = 0,
+											["x"] = -318282.00927259,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 135,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1035,
+										["rate"] = 1,
+										["y"] = 635384.10059778,
+										["x"] = -318282.00927259,
+										["name"] = "Static M92 M32-10C 02-3-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635384.10059778,
+								["x"] = -318282.00927259,
+								["name"] = "Static M92 M32-10C 02-3",
+								["dead"] = false,
+							}, -- end of [17]
+							[18] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635416.35235284,
+											["speed"] = 0,
+											["x"] = -318274.19882668,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 136,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "KrAZ6322",
+										["unitId"] = 1036,
+										["rate"] = 5,
+										["y"] = 635416.35235284,
+										["x"] = -318274.19882668,
+										["name"] = "Static Truck KrAZ-6322 6x6-1",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635416.35235284,
+								["x"] = -318274.19882668,
+								["name"] = "Static Truck KrAZ-6322 6x6-1",
+								["dead"] = false,
+							}, -- end of [18]
+							[19] = 
+							{
+								["heading"] = 6.0039326268605,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635411.00947303,
+											["speed"] = 0,
+											["x"] = -318280.48602478,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 137,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_HX81_Tractor",
+										["unitId"] = 1037,
+										["rate"] = 5,
+										["y"] = 635411.00947303,
+										["x"] = -318280.48602478,
+										["name"] = "Static Tractor HX81 [CH]-2",
+										["heading"] = 6.0039326268605,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635411.00947303,
+								["x"] = -318280.48602478,
+								["name"] = "Static Tractor HX81 [CH]-2",
+								["dead"] = false,
+							}, -- end of [19]
+							[20] = 
+							{
+								["heading"] = 3.700098014228,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635050.95042429,
+											["speed"] = 0,
+											["x"] = -317869.55804818,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 167,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1067,
+										["rate"] = 1,
+										["y"] = 635050.95042429,
+										["x"] = -317869.55804818,
+										["name"] = "Static M92 M32-10C 02-7-1",
+										["heading"] = 3.700098014228,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635050.95042429,
+								["x"] = -317869.55804818,
+								["name"] = "Static M92 M32-10C 02-7",
+								["dead"] = false,
+							}, -- end of [20]
+							[21] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635053.52402932,
+											["speed"] = 0,
+											["x"] = -317871.51268492,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 168,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1068,
+										["rate"] = 1,
+										["y"] = 635053.52402932,
+										["x"] = -317871.51268492,
+										["name"] = "Static M92 AM32a-60-02-9-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635053.52402932,
+								["x"] = -317871.51268492,
+								["name"] = "Static M92 AM32a-60-02-9",
+								["dead"] = false,
+							}, -- end of [21]
+							[22] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635032.84182653,
+											["speed"] = 0,
+											["x"] = -317863.61932875,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 169,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1069,
+										["rate"] = 7,
+										["y"] = 635032.84182653,
+										["x"] = -317863.61932875,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635032.84182653,
+								["x"] = -317863.61932875,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-1",
+								["dead"] = false,
+							}, -- end of [22]
+							[23] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635037.84018016,
+											["speed"] = 0,
+											["x"] = -317866.77618368,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 171,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1071,
+										["rate"] = 7,
+										["y"] = 635037.84018016,
+										["x"] = -317866.77618368,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-2-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635037.84018016,
+								["x"] = -317866.77618368,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-2",
+								["dead"] = false,
+							}, -- end of [23]
+							[24] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635020.16965285,
+											["speed"] = 0,
+											["x"] = -317918.79240892,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 172,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1072,
+										["rate"] = 10,
+										["y"] = 635020.16965285,
+										["x"] = -317918.79240892,
+										["name"] = "Static Trailer SLT-50 [CH]-5",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635020.16965285,
+								["x"] = -317918.79240892,
+								["name"] = "Static Trailer SLT-50 [CH]-5",
+								["dead"] = false,
+							}, -- end of [24]
+							[25] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635044.27208212,
+											["speed"] = 0,
+											["x"] = -317869.91639825,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 173,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1073,
+										["rate"] = 10,
+										["y"] = 635044.27208212,
+										["x"] = -317869.91639825,
+										["name"] = "Static Trailer SLT-50 [CH]-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635044.27208212,
+								["x"] = -317869.91639825,
+								["name"] = "Static Trailer SLT-50 [CH]-1",
+								["dead"] = false,
+							}, -- end of [25]
+							[26] = 
+							{
+								["heading"] = 0.54105206811824,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635014.20278486,
+											["speed"] = 0,
+											["x"] = -317914.67968675,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 174,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Tractor",
+										["unitId"] = 1074,
+										["rate"] = 10,
+										["y"] = 635014.20278486,
+										["x"] = -317914.67968675,
+										["name"] = "Static Tractor SLT-50 [CH]-1",
+										["heading"] = 0.54105206811824,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635014.20278486,
+								["x"] = -317914.67968675,
+								["name"] = "Static Tractor SLT-50 [CH]-1",
+								["dead"] = false,
+							}, -- end of [26]
+							[27] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635026.82846558,
+											["speed"] = 0,
+											["x"] = -317854.42109623,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 175,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1075,
+										["rate"] = 1,
+										["y"] = 635026.82846558,
+										["x"] = -317854.42109623,
+										["name"] = "Static M92 AM32a-60-02-10-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635026.82846558,
+								["x"] = -317854.42109623,
+								["name"] = "Static M92 AM32a-60-02-10",
+								["dead"] = false,
+							}, -- end of [27]
+							[28] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635006.14626279,
+											["speed"] = 0,
+											["x"] = -317846.52774006,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 176,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1076,
+										["rate"] = 7,
+										["y"] = 635006.14626279,
+										["x"] = -317846.52774006,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-3-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635006.14626279,
+								["x"] = -317846.52774006,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-3",
+								["dead"] = false,
+							}, -- end of [28]
+							[29] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635017.57651838,
+											["speed"] = 0,
+											["x"] = -317852.82480956,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 177,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1077,
+										["rate"] = 10,
+										["y"] = 635017.57651838,
+										["x"] = -317852.82480956,
+										["name"] = "Static Trailer SLT-50 [CH]-2-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635017.57651838,
+								["x"] = -317852.82480956,
+								["name"] = "Static Trailer SLT-50 [CH]-2",
+								["dead"] = false,
+							}, -- end of [29]
+							[30] = 
+							{
+								["heading"] = 3.700098014228,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635024.25486055,
+											["speed"] = 0,
+											["x"] = -317852.46645949,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 179,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1079,
+										["rate"] = 1,
+										["y"] = 635024.25486055,
+										["x"] = -317852.46645949,
+										["name"] = "Static M92 M32-10C 02-8-1",
+										["heading"] = 3.700098014228,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635024.25486055,
+								["x"] = -317852.46645949,
+								["name"] = "Static M92 M32-10C 02-8",
+								["dead"] = false,
+							}, -- end of [30]
+							[31] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635011.14461642,
+											["speed"] = 0,
+											["x"] = -317849.68459499,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 180,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1080,
+										["rate"] = 7,
+										["y"] = 635011.14461642,
+										["x"] = -317849.68459499,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-4-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635011.14461642,
+								["x"] = -317849.68459499,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-4",
+								["dead"] = false,
+							}, -- end of [31]
+							[32] = 
+							{
+								["heading"] = 0.57595865315809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 634975.57371946,
+											["speed"] = 0,
+											["x"] = -317895.37621006,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 181,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1081,
+										["rate"] = 1,
+										["y"] = 634975.57371946,
+										["x"] = -317895.37621006,
+										["name"] = "Static M92 AM32a-60-02-11-1",
+										["heading"] = 0.57595865315809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 634975.57371946,
+								["x"] = -317895.37621006,
+								["name"] = "Static M92 AM32a-60-02-11",
+								["dead"] = false,
+							}, -- end of [32]
+							[33] = 
+							{
+								["heading"] = 0.59341194567809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 634978.07754088,
+											["speed"] = 0,
+											["x"] = -317897.41947361,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 182,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1082,
+										["rate"] = 1,
+										["y"] = 634978.07754088,
+										["x"] = -317897.41947361,
+										["name"] = "Static M92 M32-10C 02-9-1",
+										["heading"] = 0.59341194567809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 634978.07754088,
+								["x"] = -317897.41947361,
+								["name"] = "Static M92 M32-10C 02-9",
+								["dead"] = false,
+							}, -- end of [33]
+							[34] = 
+							{
+								["heading"] = 3.7175513067479,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 634995.96784905,
+											["speed"] = 0,
+											["x"] = -317903.98655628,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 183,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1083,
+										["rate"] = 7,
+										["y"] = 634995.96784905,
+										["x"] = -317903.98655628,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-5-1",
+										["heading"] = 3.7175513067479,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 634995.96784905,
+								["x"] = -317903.98655628,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-5",
+								["dead"] = false,
+							}, -- end of [34]
+							[35] = 
+							{
+								["heading"] = 3.7175513067479,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 634991.08271293,
+											["speed"] = 0,
+											["x"] = -317900.65718439,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 184,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1084,
+										["rate"] = 7,
+										["y"] = 634991.08271293,
+										["x"] = -317900.65718439,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-6-1",
+										["heading"] = 3.7175513067479,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 634991.08271293,
+								["x"] = -317900.65718439,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-6",
+								["dead"] = false,
+							}, -- end of [35]
+							[36] = 
+							{
+								["heading"] = 0.57595865315809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 634984.76432102,
+											["speed"] = 0,
+											["x"] = -317897.29441261,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 185,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1085,
+										["rate"] = 10,
+										["y"] = 634984.76432102,
+										["x"] = -317897.29441261,
+										["name"] = "Static Trailer SLT-50 [CH]-3-1",
+										["heading"] = 0.57595865315809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 634984.76432102,
+								["x"] = -317897.29441261,
+								["name"] = "Static Trailer SLT-50 [CH]-3",
+								["dead"] = false,
+							}, -- end of [36]
+							[37] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635007.51668615,
+											["speed"] = 0,
+											["x"] = -317911.88309289,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 187,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1087,
+										["rate"] = 10,
+										["y"] = 635007.51668615,
+										["x"] = -317911.88309289,
+										["name"] = "Static Trailer SLT-50 [CH]-4",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635007.51668615,
+								["x"] = -317911.88309289,
+								["name"] = "Static Trailer SLT-50 [CH]-4",
+								["dead"] = false,
+							}, -- end of [37]
+							[38] = 
+							{
+								["heading"] = 0.54105206811824,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635001.54981816,
+											["speed"] = 0,
+											["x"] = -317907.77037072,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 188,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Tractor",
+										["unitId"] = 1088,
+										["rate"] = 10,
+										["y"] = 635001.54981816,
+										["x"] = -317907.77037072,
+										["name"] = "Static Tractor SLT-50 [CH]-2-1",
+										["heading"] = 0.54105206811824,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635001.54981816,
+								["x"] = -317907.77037072,
+								["name"] = "Static Tractor SLT-50 [CH]-2",
+								["dead"] = false,
+							}, -- end of [38]
+							[39] = 
+							{
+								["heading"] = 0.54105206811824,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635097.51287384,
+											["speed"] = 0,
+											["x"] = -317780.5556702,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 191,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Tractor",
+										["unitId"] = 1091,
+										["rate"] = 10,
+										["y"] = 635097.51287384,
+										["x"] = -317780.5556702,
+										["name"] = "Static Tractor SLT-50 [CH]-3-1",
+										["heading"] = 0.54105206811824,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635097.51287384,
+								["x"] = -317780.5556702,
+								["name"] = "Static Tractor SLT-50 [CH]-3",
+								["dead"] = false,
+							}, -- end of [39]
+							[40] = 
+							{
+								["heading"] = 0.59341194567809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635061.38762986,
+											["speed"] = 0,
+											["x"] = -317763.29545706,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 193,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1093,
+										["rate"] = 1,
+										["y"] = 635061.38762986,
+										["x"] = -317763.29545706,
+										["name"] = "Static M92 M32-10C 02-10-1",
+										["heading"] = 0.59341194567809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635061.38762986,
+								["x"] = -317763.29545706,
+								["name"] = "Static M92 M32-10C 02-10",
+								["dead"] = false,
+							}, -- end of [40]
+							[41] = 
+							{
+								["heading"] = 3.700098014228,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635134.26051327,
+											["speed"] = 0,
+											["x"] = -317735.43403163,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 195,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1095,
+										["rate"] = 1,
+										["y"] = 635134.26051327,
+										["x"] = -317735.43403163,
+										["name"] = "Static M92 M32-10C 02-11-1",
+										["heading"] = 3.700098014228,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635134.26051327,
+								["x"] = -317735.43403163,
+								["name"] = "Static M92 M32-10C 02-11",
+								["dead"] = false,
+							}, -- end of [41]
+							[42] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635121.15026914,
+											["speed"] = 0,
+											["x"] = -317732.65216713,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 196,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1096,
+										["rate"] = 7,
+										["y"] = 635121.15026914,
+										["x"] = -317732.65216713,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-7-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635121.15026914,
+								["x"] = -317732.65216713,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-7",
+								["dead"] = false,
+							}, -- end of [42]
+							[43] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635110.13855456,
+											["speed"] = 0,
+											["x"] = -317720.29707968,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 197,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1097,
+										["rate"] = 1,
+										["y"] = 635110.13855456,
+										["x"] = -317720.29707968,
+										["name"] = "Static M92 AM32a-60-02-12-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635110.13855456,
+								["x"] = -317720.29707968,
+								["name"] = "Static M92 AM32a-60-02-12",
+								["dead"] = false,
+							}, -- end of [43]
+							[44] = 
+							{
+								["heading"] = 3.700098014228,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635107.56494953,
+											["speed"] = 0,
+											["x"] = -317718.34244294,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 198,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_M32-10C_02",
+										["type"] = "M32-10C_02",
+										["unitId"] = 1098,
+										["rate"] = 1,
+										["y"] = 635107.56494953,
+										["x"] = -317718.34244294,
+										["name"] = "Static M92 M32-10C 02-12-1",
+										["heading"] = 3.700098014228,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635107.56494953,
+								["x"] = -317718.34244294,
+								["name"] = "Static M92 M32-10C 02-12",
+								["dead"] = false,
+							}, -- end of [44]
+							[45] = 
+							{
+								["heading"] = 3.7175513067479,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635079.27793803,
+											["speed"] = 0,
+											["x"] = -317769.86253973,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 199,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1099,
+										["rate"] = 7,
+										["y"] = 635079.27793803,
+										["x"] = -317769.86253973,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-8-1",
+										["heading"] = 3.7175513067479,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635079.27793803,
+								["x"] = -317769.86253973,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-8",
+								["dead"] = false,
+							}, -- end of [45]
+							[46] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635090.82677513,
+											["speed"] = 0,
+											["x"] = -317777.75907634,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 200,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1100,
+										["rate"] = 10,
+										["y"] = 635090.82677513,
+										["x"] = -317777.75907634,
+										["name"] = "Static Trailer SLT-50 [CH]-6-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635090.82677513,
+								["x"] = -317777.75907634,
+								["name"] = "Static Trailer SLT-50 [CH]-6",
+								["dead"] = false,
+							}, -- end of [46]
+							[47] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635136.8341183,
+											["speed"] = 0,
+											["x"] = -317737.38866837,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 201,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1101,
+										["rate"] = 1,
+										["y"] = 635136.8341183,
+										["x"] = -317737.38866837,
+										["name"] = "Static M92 AM32a-60-02-13-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635136.8341183,
+								["x"] = -317737.38866837,
+								["name"] = "Static M92 AM32a-60-02-13",
+								["dead"] = false,
+							}, -- end of [47]
+							[48] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635103.47974183,
+											["speed"] = 0,
+											["x"] = -317784.66839237,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 202,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1102,
+										["rate"] = 10,
+										["y"] = 635103.47974183,
+										["x"] = -317784.66839237,
+										["name"] = "Static Trailer SLT-50 [CH]-7-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635103.47974183,
+								["x"] = -317784.66839237,
+								["name"] = "Static Trailer SLT-50 [CH]-7",
+								["dead"] = false,
+							}, -- end of [48]
+							[49] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635089.45635177,
+											["speed"] = 0,
+											["x"] = -317712.40372351,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 203,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1103,
+										["rate"] = 7,
+										["y"] = 635089.45635177,
+										["x"] = -317712.40372351,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-9-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635089.45635177,
+								["x"] = -317712.40372351,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-9",
+								["dead"] = false,
+							}, -- end of [49]
+							[50] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635094.4547054,
+											["speed"] = 0,
+											["x"] = -317715.56057844,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 204,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1104,
+										["rate"] = 7,
+										["y"] = 635094.4547054,
+										["x"] = -317715.56057844,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-10-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635094.4547054,
+								["x"] = -317715.56057844,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-10",
+								["dead"] = false,
+							}, -- end of [50]
+							[51] = 
+							{
+								["heading"] = 3.7175513067479,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635074.39280191,
+											["speed"] = 0,
+											["x"] = -317766.53316784,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 205,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1105,
+										["rate"] = 7,
+										["y"] = 635074.39280191,
+										["x"] = -317766.53316784,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-11-1",
+										["heading"] = 3.7175513067479,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635074.39280191,
+								["x"] = -317766.53316784,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-11",
+								["dead"] = false,
+							}, -- end of [51]
+							[52] = 
+							{
+								["heading"] = 0.54105206811824,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635084.85990714,
+											["speed"] = 0,
+											["x"] = -317773.64635417,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 206,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Tractor",
+										["unitId"] = 1106,
+										["rate"] = 10,
+										["y"] = 635084.85990714,
+										["x"] = -317773.64635417,
+										["name"] = "Static Tractor SLT-50 [CH]-4-1",
+										["heading"] = 0.54105206811824,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635084.85990714,
+								["x"] = -317773.64635417,
+								["name"] = "Static Tractor SLT-50 [CH]-4",
+								["dead"] = false,
+							}, -- end of [52]
+							[53] = 
+							{
+								["heading"] = 0.54105206811825,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635116.15191551,
+											["speed"] = 0,
+											["x"] = -317729.4953122,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 207,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "Ural-4320-31",
+										["unitId"] = 1107,
+										["rate"] = 7,
+										["y"] = 635116.15191551,
+										["x"] = -317729.4953122,
+										["name"] = "Static Truck Ural-4320-31 Arm'd-12-1",
+										["heading"] = 0.54105206811825,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635116.15191551,
+								["x"] = -317729.4953122,
+								["name"] = "Static Truck Ural-4320-31 Arm'd-12",
+								["dead"] = false,
+							}, -- end of [53]
+							[54] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635127.5821711,
+											["speed"] = 0,
+											["x"] = -317735.7923817,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 208,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1108,
+										["rate"] = 10,
+										["y"] = 635127.5821711,
+										["x"] = -317735.7923817,
+										["name"] = "Static Trailer SLT-50 [CH]-8-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635127.5821711,
+								["x"] = -317735.7923817,
+								["name"] = "Static Trailer SLT-50 [CH]-8",
+								["dead"] = false,
+							}, -- end of [54]
+							[55] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635100.88660736,
+											["speed"] = 0,
+											["x"] = -317718.70079301,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 209,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1109,
+										["rate"] = 10,
+										["y"] = 635100.88660736,
+										["x"] = -317718.70079301,
+										["name"] = "Static Trailer SLT-50 [CH]-9-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635100.88660736,
+								["x"] = -317718.70079301,
+								["name"] = "Static Trailer SLT-50 [CH]-9",
+								["dead"] = false,
+							}, -- end of [55]
+							[56] = 
+							{
+								["heading"] = 0.57595865315809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635058.88380844,
+											["speed"] = 0,
+											["x"] = -317761.25219351,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 210,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Fortifications",
+										["shape_name"] = "M92_AM32a-60_02",
+										["type"] = "AM32a-60_02",
+										["unitId"] = 1110,
+										["rate"] = 1,
+										["y"] = 635058.88380844,
+										["x"] = -317761.25219351,
+										["name"] = "Static M92 AM32a-60-02-14-1",
+										["heading"] = 0.57595865315809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635058.88380844,
+								["x"] = -317761.25219351,
+								["name"] = "Static M92 AM32a-60-02-14",
+								["dead"] = false,
+							}, -- end of [56]
+							[57] = 
+							{
+								["heading"] = 0.57595865315809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635068.07441,
+											["speed"] = 0,
+											["x"] = -317763.17039606,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 211,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "summer",
+										["category"] = "Unarmed",
+										["type"] = "CHAP_SLT50_Trailer",
+										["unitId"] = 1111,
+										["rate"] = 10,
+										["y"] = 635068.07441,
+										["x"] = -317763.17039606,
+										["name"] = "Static Trailer SLT-50 [CH]-10-1",
+										["heading"] = 0.57595865315809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635068.07441,
+								["x"] = -317763.17039606,
+								["name"] = "Static Trailer SLT-50 [CH]-10",
+								["dead"] = false,
+							}, -- end of [57]
+						}, -- end of ["group"]
+					}, -- end of ["static"]
+				}, -- end of [1]
+				[2] = 
+				{
+					["name"] = "USA",
+					["id"] = 2,
+					["static"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["heading"] = 5.8992128717408,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635796.11300982,
+											["speed"] = 0,
+											["x"] = -318138.85329422,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 163,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "armee de l_air bats, ba 105",
+										["category"] = "Planes",
+										["type"] = "C-130J-30",
+										["unitId"] = 1063,
+										["rate"] = 70,
+										["y"] = 635796.11300982,
+										["x"] = -318138.85329422,
+										["name"] = "Static C-130J-30-3",
+										["heading"] = 5.8992128717408,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635796.11300982,
+								["x"] = -318138.85329422,
+								["name"] = "Static C-130J-30-3",
+								["dead"] = false,
+							}, -- end of [1]
+							[2] = 
+							{
+								["heading"] = 5.8992128717408,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635729.70278081,
+											["speed"] = 0,
+											["x"] = -318165.71318223,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 213,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "armee de l_air bats, ba 105",
+										["category"] = "Planes",
+										["type"] = "C-130J-30",
+										["unitId"] = 1113,
+										["rate"] = 70,
+										["y"] = 635729.70278081,
+										["x"] = -318165.71318223,
+										["name"] = "Static C-130J-30-4-1",
+										["heading"] = 5.8992128717408,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635729.70278081,
+								["x"] = -318165.71318223,
+								["name"] = "Static C-130J-30-4",
+								["dead"] = false,
+							}, -- end of [2]
+						}, -- end of ["group"]
+					}, -- end of ["static"]
+					["vehicle"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["visible"] = false,
+								["hiddenOnPlanner"] = true,
+								["tasks"] = {},
+								["uncontrollable"] = false,
+								["task"] = "Ground Nothing",
+								["hiddenOnMFD"] = true,
+								["taskSelected"] = true,
+								["route"] = 
+								{
+									["spans"] = {},
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 13,
+											["type"] = "Turning Point",
+											["ETA"] = 0,
+											["alt_type"] = "BARO",
+											["formation_template"] = "",
+											["y"] = 658451.02389226,
+											["x"] = -292686.95542727,
+											["ETA_locked"] = true,
+											["speed"] = 0,
+											["action"] = "Off Road",
+											["task"] = 
+											{
+												["id"] = "ComboTask",
+												["params"] = 
+												{
+													["tasks"] = 
+													{
+														[1] = 
+														{
+															["enabled"] = true,
+															["auto"] = true,
+															["id"] = "WrappedAction",
+															["number"] = 1,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "EPLRS",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																		["groupId"] = 1,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [1]
+														[2] = 
+														{
+															["enabled"] = true,
+															["auto"] = false,
+															["id"] = "FAC",
+															["number"] = 2,
+															["params"] = 
+															{
+																["number"] = 1,
+																["designation"] = "Auto",
+																["modulation"] = 0,
+																["callname"] = 1,
+																["datalink"] = true,
+																["frequency"] = 133000000,
+															}, -- end of ["params"]
+														}, -- end of [2]
+														[3] = 
+														{
+															["enabled"] = true,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["number"] = 3,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetInvisible",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [3]
+														[4] = 
+														{
+															["enabled"] = true,
+															["auto"] = false,
+															["id"] = "WrappedAction",
+															["number"] = 4,
+															["params"] = 
+															{
+																["action"] = 
+																{
+																	["id"] = "SetImmortal",
+																	["params"] = 
+																	{
+																		["value"] = true,
+																	}, -- end of ["params"]
+																}, -- end of ["action"]
+															}, -- end of ["params"]
+														}, -- end of [4]
+													}, -- end of ["tasks"]
+												}, -- end of ["params"]
+											}, -- end of ["task"]
+											["speed_locked"] = true,
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 7,
+								["hidden"] = true,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["skill"] = "Excellent",
+										["coldAtStart"] = false,
+										["type"] = "JTAC",
+										["unitId"] = 14,
+										["y"] = 658451.02389226,
+										["x"] = -292686.95542727,
+										["name"] = "Ground-2-1",
+										["heading"] = 0,
+										["playerCanDrive"] = false,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 658451.02389226,
+								["x"] = -292686.95542727,
+								["name"] = "Ground-2",
+								["start_time"] = 0,
+							}, -- end of [1]
+						}, -- end of ["group"]
+					}, -- end of ["vehicle"]
+				}, -- end of [2]
+				[3] = 
+				{
+					["id"] = 5,
+					["static"] = 
+					{
+						["group"] = 
+						{
+							[1] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635048.3116647,
+											["speed"] = 0,
+											["x"] = -317877.34401783,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 170,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "B600_drivable",
+										["unitId"] = 1070,
+										["rate"] = 3,
+										["y"] = 635048.3116647,
+										["x"] = -317877.34401783,
+										["name"] = "Static M92 B600 drivable-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635048.3116647,
+								["x"] = -317877.34401783,
+								["name"] = "Static M92 B600 drivable-1",
+								["dead"] = false,
+							}, -- end of [1]
+							[2] = 
+							{
+								["heading"] = 5.8992128717408,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635931.19903466,
+											["speed"] = 0,
+											["x"] = -318086.07642848,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 162,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "armee de l_air bats, ba 105",
+										["category"] = "Planes",
+										["type"] = "C-130J-30",
+										["unitId"] = 1062,
+										["rate"] = 70,
+										["y"] = 635931.19903466,
+										["x"] = -318086.07642848,
+										["name"] = "Static C-130J-30-2",
+										["heading"] = 5.8992128717408,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635931.19903466,
+								["x"] = -318086.07642848,
+								["name"] = "Static C-130J-30-2",
+								["dead"] = false,
+							}, -- end of [2]
+							[3] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635021.61610096,
+											["speed"] = 0,
+											["x"] = -317860.25242914,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 178,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "B600_drivable",
+										["unitId"] = 1078,
+										["rate"] = 3,
+										["y"] = 635021.61610096,
+										["x"] = -317860.25242914,
+										["name"] = "Static M92 B600 drivable-2-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635021.61610096,
+								["x"] = -317860.25242914,
+								["name"] = "Static M92 B600 drivable-2",
+								["dead"] = false,
+							}, -- end of [3]
+							[4] = 
+							{
+								["heading"] = 0.57595865315809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 634980.98641943,
+											["speed"] = 0,
+											["x"] = -317889.73033834,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 186,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "B600_drivable",
+										["unitId"] = 1086,
+										["rate"] = 3,
+										["y"] = 634980.98641943,
+										["x"] = -317889.73033834,
+										["name"] = "Static M92 B600 drivable-3-1",
+										["heading"] = 0.57595865315809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 634980.98641943,
+								["x"] = -317889.73033834,
+								["name"] = "Static M92 B600 drivable-3",
+								["dead"] = false,
+							}, -- end of [4]
+							[5] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635131.62175368,
+											["speed"] = 0,
+											["x"] = -317743.22000128,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 190,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "B600_drivable",
+										["unitId"] = 1090,
+										["rate"] = 3,
+										["y"] = 635131.62175368,
+										["x"] = -317743.22000128,
+										["name"] = "Static M92 B600 drivable-4-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635131.62175368,
+								["x"] = -317743.22000128,
+								["name"] = "Static M92 B600 drivable-4",
+								["dead"] = false,
+							}, -- end of [5]
+							[6] = 
+							{
+								["heading"] = 3.682644721708,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635104.92618994,
+											["speed"] = 0,
+											["x"] = -317726.12841259,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 192,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "B600_drivable",
+										["unitId"] = 1092,
+										["rate"] = 3,
+										["y"] = 635104.92618994,
+										["x"] = -317726.12841259,
+										["name"] = "Static M92 B600 drivable-5-1",
+										["heading"] = 3.682644721708,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635104.92618994,
+								["x"] = -317726.12841259,
+								["name"] = "Static M92 B600 drivable-5",
+								["dead"] = false,
+							}, -- end of [6]
+							[7] = 
+							{
+								["heading"] = 0.57595865315809,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635064.29650841,
+											["speed"] = 0,
+											["x"] = -317755.60632179,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 194,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["category"] = "Unarmed",
+										["type"] = "B600_drivable",
+										["unitId"] = 1094,
+										["rate"] = 3,
+										["y"] = 635064.29650841,
+										["x"] = -317755.60632179,
+										["name"] = "Static M92 B600 drivable-6-1",
+										["heading"] = 0.57595865315809,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635064.29650841,
+								["x"] = -317755.60632179,
+								["name"] = "Static M92 B600 drivable-6",
+								["dead"] = false,
+							}, -- end of [7]
+							[8] = 
+							{
+								["heading"] = 6.0388392119004,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635396.55699558,
+											["speed"] = 0,
+											["x"] = -318278.97931203,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 138,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "ec 1 30 alsace ba 132 colmar meyenheim",
+										["category"] = "Planes",
+										["type"] = "Mirage-F1BE",
+										["unitId"] = 1038,
+										["rate"] = 40,
+										["y"] = 635396.55699558,
+										["x"] = -318278.97931203,
+										["name"] = "Static Mirage F1BE-1",
+										["heading"] = 6.0388392119004,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635396.55699558,
+								["x"] = -318278.97931203,
+								["name"] = "Static Mirage F1BE-1",
+								["dead"] = false,
+							}, -- end of [8]
+							[9] = 
+							{
+								["heading"] = 6.0388392119004,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635432.59115292,
+											["speed"] = 0,
+											["x"] = -318269.78772397,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 212,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "ec 1 30 alsace ba 132 colmar meyenheim",
+										["category"] = "Planes",
+										["type"] = "Mirage-F1BE",
+										["unitId"] = 1112,
+										["rate"] = 40,
+										["y"] = 635432.59115292,
+										["x"] = -318269.78772397,
+										["name"] = "Static Mirage F1BE-2-1",
+										["heading"] = 6.0388392119004,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635432.59115292,
+								["x"] = -318269.78772397,
+								["name"] = "Static Mirage F1BE-2",
+								["dead"] = false,
+							}, -- end of [9]
+							[10] = 
+							{
+								["heading"] = 5.8992128717408,
+								["route"] = 
+								{
+									["points"] = 
+									{
+										[1] = 
+										{
+											["alt"] = 0,
+											["type"] = "",
+											["name"] = "",
+											["y"] = 635863.79468649,
+											["speed"] = 0,
+											["x"] = -318112.96437204,
+											["formation_template"] = "",
+											["action"] = "",
+										}, -- end of [1]
+									}, -- end of ["points"]
+								}, -- end of ["route"]
+								["groupId"] = 164,
+								["units"] = 
+								{
+									[1] = 
+									{
+										["tasks"] = {},
+										["livery_id"] = "armee de l_air bats, ba 105",
+										["category"] = "Planes",
+										["type"] = "C-130J-30",
+										["unitId"] = 1064,
+										["rate"] = 70,
+										["y"] = 635863.79468649,
+										["x"] = -318112.96437204,
+										["name"] = "Static C-130J-30-1",
+										["heading"] = 5.8992128717408,
+									}, -- end of [1]
+								}, -- end of ["units"]
+								["y"] = 635863.79468649,
+								["x"] = -318112.96437204,
+								["name"] = "Static C-130J-30-1",
+								["dead"] = false,
+							}, -- end of [10]
+						}, -- end of ["group"]
+					}, -- end of ["static"]
+					["name"] = "France",
+				}, -- end of [3]
+			}, -- end of ["country"]
+		}, -- end of ["blue"]
+		["neutrals"] = 
+		{
+			["bullseye"] = 
+			{
+				["y"] = 0,
+				["x"] = 0,
+			}, -- end of ["bullseye"]
+			["nav_points"] = {},
+			["name"] = "neutrals",
+			["country"] = {},
+		}, -- end of ["neutrals"]
+		["red"] = 
+		{
+			["bullseye"] = 
+			{
+				["y"] = 371700,
+				["x"] = 11557,
+			}, -- end of ["bullseye"]
+			["nav_points"] = {},
+			["name"] = "red",
+			["country"] = {},
+		}, -- end of ["red"]
+	}, -- end of ["coalition"]
+	["sortie"] = "DictKey_sortie_5",
+	["version"] = 23,
+	["trigrules"] = 
+	{
+		[1] = 
+		{
+			["rules"] = 
+			{
+				[1] = 
+				{
+					["seconds"] = 1,
+					["coalitionlist"] = "",
+					["predicate"] = "c_time_after",
+					["zone"] = "",
+				}, -- end of [1]
+			}, -- end of ["rules"]
+			["comment"] = "DYNAMIC TRAINING INIT",
+			["eventlist"] = "",
+			["predicate"] = "triggerOnce",
+			["actions"] = 
+			{
+				[1] = 
+				{
+					["predicate"] = "a_do_script_file",
+					["file"] = "ResKey_Dynamic_Training",
+				}, -- end of [1]
+				[2] = 
+				{
+					["objects_mask"] = 1,
+					["predicate"] = "a_remove_scene_objects",
+					["zone"] = 165,
+				}, -- end of [2]
+			}, -- end of ["actions"]
+			["colorItem"] = "0xffffffff",
+		}, -- end of [1]
+	}, -- end of ["trigrules"]
+	["currentKey"] = 49494,
+	["failures"] = 
+	{
+		["engine_flameout"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "engine_flameout",
+			["mm"] = 0,
+		}, -- end of ["engine_flameout"]
+		["right_front_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_front_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["right_front_transfer_fail"]
+		["right_front_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_front_leaks",
+			["mm"] = 0,
+		}, -- end of ["right_front_leaks"]
+		["equip_temp_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "equip_temp_fail",
+			["mm"] = 0,
+		}, -- end of ["equip_temp_fail"]
+		["fuel_accu_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "fuel_accu_leaks",
+			["mm"] = 0,
+		}, -- end of ["fuel_accu_leaks"]
+		["broken_guards"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "broken_guards",
+			["mm"] = 0,
+		}, -- end of ["broken_guards"]
+		["CDVE_CH4_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "CDVE_CH4_FAIL",
+			["mm"] = 0,
+		}, -- end of ["CDVE_CH4_FAIL"]
+		["gear_left_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gear_left_stuck",
+			["mm"] = 0,
+		}, -- end of ["gear_left_stuck"]
+		["TRN_FAIL_AUX"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["mm"] = 0,
+		}, -- end of ["TRN_FAIL_AUX"]
+		["oxygen_regulator_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "oxygen_regulator_fail",
+			["mm"] = 0,
+		}, -- end of ["oxygen_regulator_fail"]
+		["gyros_general_BSM_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gyros_general_BSM_fail",
+			["mm"] = 0,
+		}, -- end of ["gyros_general_BSM_fail"]
+		["trim_elect_supply"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "trim_elect_supply",
+			["mm"] = 0,
+		}, -- end of ["trim_elect_supply"]
+		["detotalizer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "detotalizer_fail",
+			["mm"] = 0,
+		}, -- end of ["detotalizer_fail"]
+		["pitot_heat_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "pitot_heat_fail",
+			["mm"] = 0,
+		}, -- end of ["pitot_heat_fail"]
+		["battery_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "battery_fail",
+			["mm"] = 0,
+		}, -- end of ["battery_fail"]
+		["slats_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "slats_stuck",
+			["mm"] = 0,
+		}, -- end of ["slats_stuck"]
+		["HYD_ALT_2_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["mm"] = 0,
+		}, -- end of ["HYD_ALT_2_FAIL"]
+		["right_wing_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_wing_leaks",
+			["mm"] = 0,
+		}, -- end of ["right_wing_leaks"]
+		["start_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "start_fail",
+			["mm"] = 0,
+		}, -- end of ["start_fail"]
+		["total_comp_stall"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "total_comp_stall",
+			["mm"] = 0,
+		}, -- end of ["total_comp_stall"]
+		["gear_right_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gear_right_stuck",
+			["mm"] = 0,
+		}, -- end of ["gear_right_stuck"]
+		["miss_bus_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "miss_bus_fail",
+			["mm"] = 0,
+		}, -- end of ["miss_bus_fail"]
+		["gear_down_lock_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gear_down_lock_fail",
+			["mm"] = 0,
+		}, -- end of ["gear_down_lock_fail"]
+		["yaw_damper_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "yaw_damper_fail",
+			["mm"] = 0,
+		}, -- end of ["yaw_damper_fail"]
+		["left_airbrake_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_airbrake_fail",
+			["mm"] = 0,
+		}, -- end of ["left_airbrake_fail"]
+		["OIL_SYSTEM_FAIL_100"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "OIL_SYSTEM_FAIL_100",
+			["mm"] = 0,
+		}, -- end of ["OIL_SYSTEM_FAIL_100"]
+		["hydr_serv_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydr_serv_leaks",
+			["mm"] = 0,
+		}, -- end of ["hydr_serv_leaks"]
+		["external_tanks_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "external_tanks_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["external_tanks_transfer_fail"]
+		["pilot_aids_1_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "pilot_aids_1_fail",
+			["mm"] = 0,
+		}, -- end of ["pilot_aids_1_fail"]
+		["left_wing_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_wing_leaks",
+			["mm"] = 0,
+		}, -- end of ["left_wing_leaks"]
+		["hydr1_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydr1_leaks",
+			["mm"] = 0,
+		}, -- end of ["hydr1_leaks"]
+		["RWR_FAILURE_SENSOR_LEFT"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RWR_FAILURE_SENSOR_LEFT",
+			["mm"] = 0,
+		}, -- end of ["RWR_FAILURE_SENSOR_LEFT"]
+		["ELEC_ALT_1_TOTAL_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ELEC_ALT_1_TOTAL_FAIL",
+			["mm"] = 0,
+		}, -- end of ["ELEC_ALT_1_TOTAL_FAIL"]
+		["RWR_FAILURE_TOTAL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RWR_FAILURE_TOTAL",
+			["mm"] = 0,
+		}, -- end of ["RWR_FAILURE_TOTAL"]
+		["gyros_att_indicator"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gyros_att_indicator",
+			["mm"] = 0,
+		}, -- end of ["gyros_att_indicator"]
+		["altitude_chain_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "altitude_chain_fail",
+			["mm"] = 0,
+		}, -- end of ["altitude_chain_fail"]
+		["trim_pitch_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "trim_pitch_fail",
+			["mm"] = 0,
+		}, -- end of ["trim_pitch_fail"]
+		["RWR_FAILURE_SENSOR_RIGHT"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RWR_FAILURE_SENSOR_RIGHT",
+			["mm"] = 0,
+		}, -- end of ["RWR_FAILURE_SENSOR_RIGHT"]
+		["front_central_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "front_central_leaks",
+			["mm"] = 0,
+		}, -- end of ["front_central_leaks"]
+		["LAOA_SENSOR_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "LAOA_SENSOR_FAIL",
+			["mm"] = 0,
+		}, -- end of ["LAOA_SENSOR_FAIL"]
+		["hydr2_reserv_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydr2_reserv_leaks",
+			["mm"] = 0,
+		}, -- end of ["hydr2_reserv_leaks"]
+		["right_airbrake_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_airbrake_fail",
+			["mm"] = 0,
+		}, -- end of ["right_airbrake_fail"]
+		["ignition_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ignition_fail",
+			["mm"] = 0,
+		}, -- end of ["ignition_fail"]
+		["compressor_damage"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "compressor_damage",
+			["mm"] = 0,
+		}, -- end of ["compressor_damage"]
+		["hydr2_pump_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydr2_pump_fail",
+			["mm"] = 0,
+		}, -- end of ["hydr2_pump_fail"]
+		["right_rear_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_rear_leaks",
+			["mm"] = 0,
+		}, -- end of ["right_rear_leaks"]
+		["CDVE_CH3_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "CDVE_CH3_FAIL",
+			["mm"] = 0,
+		}, -- end of ["CDVE_CH3_FAIL"]
+		["BATT_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["mm"] = 0,
+		}, -- end of ["BATT_FAIL"]
+		["anemo_central_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "anemo_central_fail",
+			["mm"] = 0,
+		}, -- end of ["anemo_central_fail"]
+		["cabin_temp_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "cabin_temp_fail",
+			["mm"] = 0,
+		}, -- end of ["cabin_temp_fail"]
+		["gyros_emergency_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gyros_emergency_fail",
+			["mm"] = 0,
+		}, -- end of ["gyros_emergency_fail"]
+		["hydr1_reserv_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydr1_reserv_leaks",
+			["mm"] = 0,
+		}, -- end of ["hydr1_reserv_leaks"]
+		["left_rear_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_rear_leaks",
+			["mm"] = 0,
+		}, -- end of ["left_rear_leaks"]
+		["tr1_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "tr1_fail",
+			["mm"] = 0,
+		}, -- end of ["tr1_fail"]
+		["ELEC_ALT_2_PART_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ELEC_ALT_2_PART_FAIL",
+			["mm"] = 0,
+		}, -- end of ["ELEC_ALT_2_PART_FAIL"]
+		["TP_SENSOR_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "TP_SENSOR_FAIL",
+			["mm"] = 0,
+		}, -- end of ["TP_SENSOR_FAIL"]
+		["hydr2_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydr2_leaks",
+			["mm"] = 0,
+		}, -- end of ["hydr2_leaks"]
+		["brakes_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "brakes_fail",
+			["mm"] = 0,
+		}, -- end of ["brakes_fail"]
+		["nosecone_stuck_forward"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "nosecone_stuck_forward",
+			["mm"] = 0,
+		}, -- end of ["nosecone_stuck_forward"]
+		["pilot_aids_2_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "pilot_aids_2_fail",
+			["mm"] = 0,
+		}, -- end of ["pilot_aids_2_fail"]
+		["BARAX_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "BARAX_fail",
+			["mm"] = 0,
+		}, -- end of ["BARAX_fail"]
+		["trim_yaw_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "trim_yaw_fail",
+			["mm"] = 0,
+		}, -- end of ["trim_yaw_fail"]
+		["ap_global_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ap_global_fail",
+			["mm"] = 0,
+		}, -- end of ["ap_global_fail"]
+		["slat_inner_left_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "slat_inner_left_stuck",
+			["mm"] = 0,
+		}, -- end of ["slat_inner_left_stuck"]
+		["PITOT_DEICE_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "PITOT_DEICE_FAIL",
+			["mm"] = 0,
+		}, -- end of ["PITOT_DEICE_FAIL"]
+		["gyros_temp_drift"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gyros_temp_drift",
+			["mm"] = 0,
+		}, -- end of ["gyros_temp_drift"]
+		["right_fuel_pump_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_fuel_pump_fail",
+			["mm"] = 0,
+		}, -- end of ["right_fuel_pump_fail"]
+		["ENG_ALT_1_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["mm"] = 0,
+		}, -- end of ["ENG_ALT_1_FAIL"]
+		["ELEC_TRN_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ELEC_TRN_FAIL",
+			["mm"] = 0,
+		}, -- end of ["ELEC_TRN_FAIL"]
+		["pitch_chain_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "pitch_chain_fail",
+			["mm"] = 0,
+		}, -- end of ["pitch_chain_fail"]
+		["right_rear_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_rear_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["right_rear_transfer_fail"]
+		["slat_inner_right_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "slat_inner_right_stuck",
+			["mm"] = 0,
+		}, -- end of ["slat_inner_right_stuck"]
+		["ENG_ALT_2_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["mm"] = 0,
+		}, -- end of ["ENG_ALT_2_FAIL"]
+		["INS_GYROS_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "INS_GYROS_FAIL",
+			["mm"] = 0,
+		}, -- end of ["INS_GYROS_FAIL"]
+		["left_front_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_front_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["left_front_transfer_fail"]
+		["AB_fire"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "AB_fire",
+			["mm"] = 0,
+		}, -- end of ["AB_fire"]
+		["slat_outer_right_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "slat_outer_right_stuck",
+			["mm"] = 0,
+		}, -- end of ["slat_outer_right_stuck"]
+		["fuel_gauges_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "fuel_gauges_fail",
+			["mm"] = 0,
+		}, -- end of ["fuel_gauges_fail"]
+		["flap_left_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "flap_left_stuck",
+			["mm"] = 0,
+		}, -- end of ["flap_left_stuck"]
+		["trim_roll_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "trim_roll_fail",
+			["mm"] = 0,
+		}, -- end of ["trim_roll_fail"]
+		["fuel_intercom_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "fuel_intercom_fail",
+			["mm"] = 0,
+		}, -- end of ["fuel_intercom_fail"]
+		["ELEC_ALT_1_PART_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ELEC_ALT_1_PART_FAIL",
+			["mm"] = 0,
+		}, -- end of ["ELEC_ALT_1_PART_FAIL"]
+		["tr2_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "tr2_fail",
+			["mm"] = 0,
+		}, -- end of ["tr2_fail"]
+		["gyros_main_att_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gyros_main_att_fail",
+			["mm"] = 0,
+		}, -- end of ["gyros_main_att_fail"]
+		["mach_chain_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "mach_chain_fail",
+			["mm"] = 0,
+		}, -- end of ["mach_chain_fail"]
+		["hydr1_pump_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "hydr1_pump_fail",
+			["mm"] = 0,
+		}, -- end of ["hydr1_pump_fail"]
+		["nosecone_stuck_backward"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "nosecone_stuck_backward",
+			["mm"] = 0,
+		}, -- end of ["nosecone_stuck_backward"]
+		["triphase_inv_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "triphase_inv_fail",
+			["mm"] = 0,
+		}, -- end of ["triphase_inv_fail"]
+		["partial_comp_stall"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "partial_comp_stall",
+			["mm"] = 0,
+		}, -- end of ["partial_comp_stall"]
+		["left_rear_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_rear_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["left_rear_transfer_fail"]
+		["gear_nose_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gear_nose_stuck",
+			["mm"] = 0,
+		}, -- end of ["gear_nose_stuck"]
+		["ELEC_ALT_2_TOTAL_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ELEC_ALT_2_TOTAL_FAIL",
+			["mm"] = 0,
+		}, -- end of ["ELEC_ALT_2_TOTAL_FAIL"]
+		["alt2_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "alt2_fail",
+			["mm"] = 0,
+		}, -- end of ["alt2_fail"]
+		["RWR_FAILURE_SENSOR_TAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RWR_FAILURE_SENSOR_TAIL",
+			["mm"] = 0,
+		}, -- end of ["RWR_FAILURE_SENSOR_TAIL"]
+		["RS_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RS_FAIL",
+			["mm"] = 0,
+		}, -- end of ["RS_FAIL"]
+		["HYD_ALT_1_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["mm"] = 0,
+		}, -- end of ["HYD_ALT_1_FAIL"]
+		["ELEC_BATT_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ELEC_BATT_FAIL",
+			["mm"] = 0,
+		}, -- end of ["ELEC_BATT_FAIL"]
+		["left_feeder_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_feeder_leaks",
+			["mm"] = 0,
+		}, -- end of ["left_feeder_leaks"]
+		["oil_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "oil_fail",
+			["mm"] = 0,
+		}, -- end of ["oil_fail"]
+		["incidometer_blockage_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "incidometer_blockage_fail",
+			["mm"] = 0,
+		}, -- end of ["incidometer_blockage_fail"]
+		["incidometer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "incidometer_fail",
+			["mm"] = 0,
+		}, -- end of ["incidometer_fail"]
+		["slat_outer_left_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "slat_outer_left_stuck",
+			["mm"] = 0,
+		}, -- end of ["slat_outer_left_stuck"]
+		["HYD_PUMP_3_FAIL_100"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "HYD_PUMP_3_FAIL_100",
+			["mm"] = 0,
+		}, -- end of ["HYD_PUMP_3_FAIL_100"]
+		["flaps_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "flaps_stuck",
+			["mm"] = 0,
+		}, -- end of ["flaps_stuck"]
+		["engine_fire"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "engine_fire",
+			["mm"] = 0,
+		}, -- end of ["engine_fire"]
+		["CDVE_CH1_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "CDVE_CH1_FAIL",
+			["mm"] = 0,
+		}, -- end of ["CDVE_CH1_FAIL"]
+		["flap_right_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "flap_right_stuck",
+			["mm"] = 0,
+		}, -- end of ["flap_right_stuck"]
+		["nosecone_stuck"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "nosecone_stuck",
+			["mm"] = 0,
+		}, -- end of ["nosecone_stuck"]
+		["ELEC_TRS_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "ELEC_TRS_FAIL",
+			["mm"] = 0,
+		}, -- end of ["ELEC_TRS_FAIL"]
+		["discharge_valves_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "discharge_valves_fail",
+			["mm"] = 0,
+		}, -- end of ["discharge_valves_fail"]
+		["gear_lever_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gear_lever_fail",
+			["mm"] = 0,
+		}, -- end of ["gear_lever_fail"]
+		["AOA_DEICE_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "AOA_DEICE_FAIL",
+			["mm"] = 0,
+		}, -- end of ["AOA_DEICE_FAIL"]
+		["TRN_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["mm"] = 0,
+		}, -- end of ["TRN_FAIL"]
+		["HYD_PUMP_2_FAIL_100"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "HYD_PUMP_2_FAIL_100",
+			["mm"] = 0,
+		}, -- end of ["HYD_PUMP_2_FAIL_100"]
+		["front_central_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "front_central_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["front_central_transfer_fail"]
+		["alt1_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "alt1_fail",
+			["mm"] = 0,
+		}, -- end of ["alt1_fail"]
+		["electropump_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "electropump_fail",
+			["mm"] = 0,
+		}, -- end of ["electropump_fail"]
+		["HYD_PUMP_1_FAIL_100"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "HYD_PUMP_1_FAIL_100",
+			["mm"] = 0,
+		}, -- end of ["HYD_PUMP_1_FAIL_100"]
+		["left_front_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_front_leaks",
+			["mm"] = 0,
+		}, -- end of ["left_front_leaks"]
+		["overspeed_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "overspeed_fail",
+			["mm"] = 0,
+		}, -- end of ["overspeed_fail"]
+		["RAOA_SENSOR_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "RAOA_SENSOR_FAIL",
+			["mm"] = 0,
+		}, -- end of ["RAOA_SENSOR_FAIL"]
+		["INS_PART_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "INS_PART_FAIL",
+			["mm"] = 0,
+		}, -- end of ["INS_PART_FAIL"]
+		["left_fuel_pump_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_fuel_pump_fail",
+			["mm"] = 0,
+		}, -- end of ["left_fuel_pump_fail"]
+		["CDVE_CH2_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "CDVE_CH2_FAIL",
+			["mm"] = 0,
+		}, -- end of ["CDVE_CH2_FAIL"]
+		["gyros_main_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "gyros_main_fail",
+			["mm"] = 0,
+		}, -- end of ["gyros_main_fail"]
+		["right_feeder_leaks"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_feeder_leaks",
+			["mm"] = 0,
+		}, -- end of ["right_feeder_leaks"]
+		["INS_TOTAL_FAIL"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "INS_TOTAL_FAIL",
+			["mm"] = 0,
+		}, -- end of ["INS_TOTAL_FAIL"]
+		["OIL_SYSTEM_FAIL_050"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "OIL_SYSTEM_FAIL_050",
+			["mm"] = 0,
+		}, -- end of ["OIL_SYSTEM_FAIL_050"]
+		["right_wing_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "right_wing_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["right_wing_transfer_fail"]
+		["chute_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "chute_fail",
+			["mm"] = 0,
+		}, -- end of ["chute_fail"]
+		["left_wing_transfer_fail"] = 
+		{
+			["hh"] = 0,
+			["prob"] = 100,
+			["enable"] = false,
+			["mmint"] = 1,
+			["id"] = "left_wing_transfer_fail",
+			["mm"] = 0,
+		}, -- end of ["left_wing_transfer_fail"]
+	}, -- end of ["failures"]
+	["forcedOptions"] = {},
+	["start_time"] = 36000,
+} -- end of mission

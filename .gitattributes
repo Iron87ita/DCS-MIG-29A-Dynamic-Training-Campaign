@@ -1,0 +1,8 @@
+*.miz binary
+*.png binary
+*.pdf binary
+*.zip binary
+*.lua text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+mission/** -text

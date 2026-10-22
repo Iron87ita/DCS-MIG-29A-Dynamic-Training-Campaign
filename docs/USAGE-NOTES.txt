@@ -1,0 +1,40 @@
+MiG-29A FULCRUM / OPERATIONAL CONVERSION COURSE / EN v1.1
+
+All current campaign titles, briefings, exercise tasking, F10 menus and new artwork are in English. Earlier v1.0 files are retained separately.
+
+USE THE UPDATED .MIZ
+Open MiG29A_FF_Operational_Conversion_EN_v1.1.miz in DCS with the MiG-29A Fulcrum Full Fidelity module and Caucasus terrain. The cover and all eight kneeboard pages are embedded: no separate kneeboard installation is required. Use your assigned Show/Hide Kneeboard and next/previous kneeboard page controls in DCS. Do not also install the PNG pack for this mission, or pages may appear twice.
+
+Four HOT Client positions and the original nine dynamic exercises are retained. Rearm before departure; activate an exercise through F10 when ready airborne. Contacts spawn immediately. Read the mission briefing and the Mission Card first.
+
+DELIVERABLES
+- Updated .miz with English text, cover and eight 1536x2048 kneeboard pages.
+- English kneeboard PDF: the same eight cards for printing or reference.
+- PNG ZIP: optional loose pages for a separate personal kneeboard setup.
+- English cover PNG: original generated image, copied without recompression.
+- ImageGen prompt log: generation and final English localization prompts; built-in tool used.
+
+KNEEBOARD CONTENTS
+01 Mission card and R-862 frequencies.
+02 Phase 1: air-defence exercises 01-04.
+03 Phase 2: ground-attack exercises 05-07.
+04 Phase 3: combined exercises 08-09.
+05 Air combat system reminders.
+06 Initial loadout and navigation reminders.
+07 Eight-range schematic, based on actual mission coordinates.
+08 F10 commands, completion and training records.
+
+The range diagram uses DCS local grid axes and distances from the first Client start. It is not a terrain chart, geographic bearing solution or substitute for live F10 coordinates. Air scenario ranges and altitudes describe initial contact generation, not mandatory flight profiles. Cockpit channel labels are 0-19; CH0 and CH1 are both Kobuleti in this mission. No tanker or guided air-to-ground capability is added.
+
+Menus remain shared at flight-group level, as in the original. Record queries and START NEXT use the first active player in that group; kill and completion records are stored by player name. SESSION ONLY is the normal sandbox fallback. No host configuration files have been changed.
+
+VALIDATION
+ZIP/resource links, four FF Client slots, Lua compilation and unchanged scenario geometry/weather/triggers are checked. Rendered kneeboard pages are visually inspected before delivery. The campaign engine is also checked with simulated DCS APIs; that does not replace in-simulator testing of the cockpit, artwork display or AI. No in-flight validation is claimed.
+
+REFERENCE SOURCES
+Official module overview: https://www.digitalcombatsimulator.com/en/shop/modules/fulcrum/
+Official manual: https://www.digitalcombatsimulator.com/upload/iblock/aa2/ulzl67k42kj99ushy9m29hlvmtk0y2tg/DCS%20MiG-29A%20Early%20Access%20Manual%20EN.pdf
+Local DCS module data: CoreMods/aircraft/MiG-29-Fulcrum/MiG-29-Fulcrum.lua and UnitPayloads/MiG-29 Fulcrum.lua.
+Scenario details and range coordinates: the supplied campaign, original author Iron87Ita.
+
+Cover is AI-generated aviation artwork, not a DCS screenshot or geographic reference. Original campaign by Iron87Ita; personal conversion and graphic edition. Not an official Eagle Dynamics campaign.

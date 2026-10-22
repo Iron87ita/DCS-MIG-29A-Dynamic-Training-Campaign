@@ -1,0 +1,9 @@
+MiG-29A FF EN v1.1 - VALIDATION
+
+PASS: all nine exercises with 1 and 4 players, including the retained two-flight multiplayer layout; menus, air/ground spawns, range bounds, scoring, progression, incomplete-spawn guard and free training.
+
+PASS: archive CRC, cover/resource links, eight embedded kneeboard images at 1536x2048, eight PDF pages, English text checks and Lua compilation with the local DCS runtime. Aircraft positions, terrain, weather, dates and triggers remain unchanged.
+
+The runtime tests use simulated DCS APIs. No in-simulator or in-flight validation is claimed.
+
+MIZ SHA256: 2d9a6c75c4cf62616313f8f6c7eff72c5054a48fb316ba77a8b49153dd45db7a
